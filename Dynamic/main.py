@@ -212,7 +212,11 @@ def main():
                 # --- 准备问题对象 ---
                 latest_year = str(batch_years[-1])
                 step_data_item = data_item.copy()
-                step_data_item["question"] = data_item['question']
+                original_question = data_item['question']
+                modified_question = f"{original_question} in {latest_year}"
+
+                step_data_item = data_item.copy()
+                step_data_item["question"] = modified_question
 
                 # 设置 Ground Truth
                 latest_year_data = yearly_contexts.get(latest_year, {})
