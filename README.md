@@ -1,4 +1,6 @@
-## RADAR: Defending RAG Dynamically against Retrieval Corruption
+## \[ICML 2026\] RADAR: Defending RAG Dynamically against Retrieval Corruption
+
+arxiv: [RADAR](https://arxiv.org/abs/2605.22041)
 
 ### Structure
 
